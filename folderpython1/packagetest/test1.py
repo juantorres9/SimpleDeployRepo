@@ -14,7 +14,7 @@ def main(argv):
     param_a=''
     param_b=''
     try:
-        opts, args =getopt.getopt(argv,"a:b")
+        opts, args =getopt.getopt(argv,"a:b:")
     except getopt.GetoptError:
         print("error")
     
@@ -26,6 +26,6 @@ def main(argv):
         else:
             print("no option choisi")
     
-    print ("les options choisis sont=",param_a,param_b)
+    print ("les options choisis sont=",param_a,"et",param_b)
 if __name__=="__main__":
     main(sys.argv[1:])
