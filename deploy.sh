@@ -10,3 +10,7 @@ printf "execution script python"
 python3 ./folderpython1/packagetest/test1.py -a $PARAM1 -b $PARAM2 
 printf "exit fin script \n"
 
+
+mkdir -p ./generated_conf_usb/bsl/sitx
+cd ./generated_conf_usb/bsl/sitx && echo "bonjour" >test1.txt
+
