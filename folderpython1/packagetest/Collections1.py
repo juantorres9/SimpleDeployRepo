@@ -12,8 +12,27 @@ b=["janvier","fevrier","mars","avril"]
 b2=b
 b3=list(b)
 extra=["mai","juin","juillet"]
-#TUPLE
+#-----------------------------------------TUPLE: collection ordonée, unchangeable
 c=("une","deux","trois","quatre")
+
+tuple1=("hola1",45,"hola5")
+tuple11=(*tuple1,)
+#tuple2=("hola1",45,"hola5","extra")
+
+#RELATION ENTRE ARGUMETS MULTIPLES *ARGS  ET TUPLE
+print("le type de variable tuple1 est =",type(tuple1),"avec taille(len)=",len(tuple1))
+print("le type de variable (*tuple1,) est =",type((*tuple1,)),"avec taille(len)=",len((*tuple1,)))
+print("le type de variable *tuple11=(*tuple1,) est =",type(tuple11),"avec taille(len)=",len(tuple11))
+for i in tuple1:    print(i)
+#concatenation
+tuple2=("valeur2-deux",)
+tuple3=tuple1+tuple2
+tuple33=(*tuple3,)
+
+print("le type de variable tuple3 est =",type(tuple3),"avec taille(len)=",len(tuple3))
+print("le type de variable (*tuple3,) est =",type((*tuple3,)),"avec taille(len)=",len((*tuple3,)))
+print("le type de variable *tuple11=(*tuple3,) est =",type(tuple33),"avec taille(len)=",len(tuple33))
+for i in tuple3:    print(i)
 
 #SET
 d={"janvier","fevrier","mars","avril"}
